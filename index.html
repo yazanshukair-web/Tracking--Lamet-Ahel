@@ -2740,7 +2740,7 @@ function confirmPhone() {
     document.getElementById('navUser').textContent = curUser.n;
     // Show member view
     showMemberProfile(_phoneCandidate.member, _phoneCandidate.type);
-    initApp();
+    buildMonthPickerGrid(); fillReportFilters(); renderStats(); renderMonthHeader(); renderTable(); renderProspects();
   } else {
     showLoginErr('الرقم غير صحيح — تحقق من آخر 4 أرقام من رقم هاتفك');
     document.getElementById('confirmIn').value = '';
