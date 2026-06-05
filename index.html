@@ -614,7 +614,12 @@ html,body{height:100%;font-family:'IBM Plex Sans Arabic',sans-serif;background:v
           <textarea id="fMemberNote" placeholder="ملاحظة من المساهم..." style="border-color:#B0444A;min-height:60px"></textarea>
         </div>
       </div>
-    </div>
+    </div><!-- LINKED ACCOUNTS -->
+      <div class="mfld" id="linkedSection">
+        <label>👥 الحسابات المرتبطة <span style="font-size:11px;color:var(--muted);font-weight:400">(يدفع عنهم هذا المساهم)</span></label>
+        <div id="linkedList" style="display:flex;flex-direction:column;gap:8px;margin-bottom:8px"></div>
+        <button type="button" onclick="addLinkedAccount()" style="background:var(--navy);color:#fff;border:none;border-radius:8px;padding:7px 14px;cursor:pointer;font-size:13px;font-family:inherit">+ إضافة حساب مرتبط</button>
+      </div>
     <div class="mfoot">
       <button class="bcancel" onclick="closeModal()">إلغاء</button>
       <button class="bsave" onclick="saveMember()">حفظ ✓</button>
