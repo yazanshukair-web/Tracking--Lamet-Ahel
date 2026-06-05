@@ -936,6 +936,13 @@ document.getElementById('un').addEventListener('keydown',e=>{if(e.key==='Enter')
 // INIT & PAGES
 // ════════════════════════════════════════════════════════
 function initApp(){
+  // Restrict phone login users to profile only
+  if(curUser && curUser.role==='member'){
+    document.querySelectorAll('.ntab').forEach(t=>t.style.display='none');
+    showPage('profile',{classList:{add:()=>{},remove:()=>{}}});
+    renderMemberProfile(_phoneCandidate.member, _phoneCandidate.type);
+    return;
+  
   // Auto-import on first run if localStorage is empty
   if(!members.length && typeof MEMBERS_1111 !== 'undefined' && MEMBERS_1111.length){
     const existing = new Set(members.map(m=>m.name));
