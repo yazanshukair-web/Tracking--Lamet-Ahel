@@ -2738,7 +2738,7 @@ function confirmPhone() {
   var phone = normalizePhone(_phoneCandidate.member.phone);
   var last4 = phone.slice(-4);
   
-  if (input === last4) {
+  if (input === last4) {var ib=document.getElementById('importBtn');if(ib)ib.style.display='none';
     // Login success
     curUser = {
       u: 'phone_' + phone,
