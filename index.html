@@ -2679,7 +2679,7 @@ function normalizePhone(p) {
 }
 
 function checkPhone() {
-  // Wait for Supabase data to load first
+  // Wait for Supabase data to load first if (!members.length) { showLoginErr('جاري تحميل البيانات...'); syncFromSupabase(true); setTimeout(checkPhone, 2000); return; }
   var phone = normalizePhone(document.getElementById('phoneIn').value);
   if (!phone) { showLoginErr('أدخل رقم الهاتف'); return; }
   
