@@ -2679,7 +2679,7 @@ function normalizePhone(p) {
 }
 
 function checkPhone() {
-  if(!members.length){try{var d=localStorage.getItem('lmah_v2');if(d)members=JSON.parse(d);}catch(e){}} setTimeout(checkPhone, 2000); return; }
+  if(!members.length){try{var d=localStorage.getItem('lmah_v2');if(d)members=JSON.parse(d);}catch(e){}}
   var phone = normalizePhone(document.getElementById('phoneIn').value);
   if (!phone) { showLoginErr('أدخل رقم الهاتف'); return; }
   
