@@ -294,7 +294,7 @@ html,body{height:100%;font-family:'IBM Plex Sans Arabic',sans-serif;background:v
     <div class="nav-right"><span id="syncBadge" style="font-size:10px;color:rgba(255,255,255,.5);margin-left:8px;white-space:nowrap;cursor:pointer" onclick="syncFromSupabase()">🔄</span>
 <span id="onlineBadge" onclick="showOnlineUsers()" title="المتصلون الآن" style="font-size:11px;color:rgba(255,255,255,.7);margin-left:6px;cursor:pointer;white-space:nowrap;padding:2px 8px;background:rgba(255,255,255,.1);border-radius:10px;display:none">🟢 1</span>
       <span class="nav-user" id="navUser"></span>
-      <button class="bsm" style="background:rgba(201,146,42,.25);border-color:rgba(201,146,42,.5)" onclick="openImportModal()">⬆ استيراد Excel</button>
+      <button class="bsm" id="importBtn" style="background:rgba(201,146,42,.25);border-color:rgba(201,146,42,.5)" onclick="openImportModal()">⬆ استيراد Excel</button>
       <button class="bsm" onclick="logout()">خروج</button>
     </div>
   </nav>
